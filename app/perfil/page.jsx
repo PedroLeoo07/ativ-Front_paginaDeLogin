@@ -1,11 +1,13 @@
-import styles from "../styles/Perfil.module.css";
-import { useRouter } from 'next/router';
+"use client";
 
-export default function Conteudo() {
+import styles from "../../styles/Perfil.module.css";
+import { useRouter } from 'next/navigation';
+
+export default function Perfil() {
     const router = useRouter();
 
     const goBack = () => {
-        router.push('/input');
+        router.push('/home');
     };
 
     return (

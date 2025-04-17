@@ -1,12 +1,14 @@
-import styles from "../styles/Sign.module.css";
-import { useRouter } from 'next/router';
+"use client";
 
-export default function Input() {
+import styles from "../../styles/Sign.module.css";
+import { useRouter } from 'next/navigation';
+
+export default function Sign() {
     const router = useRouter();
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        router.push('/conteudo'); 
+        router.push('/perfil'); 
     };
 
     return (
